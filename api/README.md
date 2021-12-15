@@ -3,18 +3,26 @@
 This sample creates the infrastructure for API, which uses ECS on Fargate.
 cd 
 
+## Prep
+```shell
+$ npm install -g aws-cdk
+$ npm install
+```
+
 ## Local Development
-Start Docker on your local computer, and launch container with the following commands:
+Start docker (Docker Desktop for Mac/Win) on your local computer, and launch container with the following commands:
 
 ```shell
 $ docker-compose up --build
 ```
 
-## Deploy
-
+Test it.
 ```shell
-$ npm install -g aws-cdk
-$ npm install
+$ curl http://localhost:8080
+```
+
+## Deploy
+```shell
 $ npm run build
 $ cdk deploy
 ```

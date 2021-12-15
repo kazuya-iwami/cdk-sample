@@ -1,6 +1,12 @@
 # Static site
+This sample creates the infrastructure for a static site, which uses an S3 bucket for storing the content. 
 
-This sample creates the infrastructure for a static site, which uses an S3 bucket for storing the content.  The site contents (located in the 'app/build' sub-directory) are deployed to the bucket.
+## Prep
+Change 'bucketName' to unique name in index.ts
+```shell
+$ npm install -g aws-cdk
+$ npm install
+```
 
 ## Local Development
 ```shell
@@ -8,19 +14,14 @@ $ cd app
 $ npm run start
 ```
 
-## Production Build
+## Deploy
+React Production Build 
 ```shell
-$ npm run build
+$ (cd app; npm run build)
 ```
 
-## Prep
-Change 'bucketName' to unique name in index.ts
-
-## Deploy
-
+The site contents (located in the 'app/build' sub-directory) are deployed to the S3 bucket.
 ```shell
-$ npm install -g aws-cdk
-$ npm install
 $ npm run build
 $ cdk deploy
 ```
