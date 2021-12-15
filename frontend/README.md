@@ -11,7 +11,7 @@ $ npm install
 ## Local Development
 ```shell
 $ cd app
-$ npm run start
+$ npm start
 ```
 
 ## Deploy
