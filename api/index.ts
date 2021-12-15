@@ -16,7 +16,7 @@ class Api extends cdk.Stack {
       cluster,
       taskImageOptions: {
         image: ecs.ContainerImage.fromAsset(path.resolve(__dirname, 'app'))
-      },
+      }
     });
 
     new cdk.CfnOutput(this, "LoadBalancer", {
