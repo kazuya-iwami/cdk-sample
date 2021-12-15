@@ -1,6 +1,6 @@
 # Static site
 
-This example creates the infrastructure for a static site, which uses an S3 bucket for storing the content.  The site contents (located in the 'app/build' sub-directory) are deployed to the bucket.
+This sample creates the infrastructure for a static site, which uses an S3 bucket for storing the content.  The site contents (located in the 'app/build' sub-directory) are deployed to the bucket.
 
 ## Local Development
 ```shell
